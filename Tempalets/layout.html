@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Layout</title>
+    <style>
+        
+        @import url(https://fonts.googleapis.com/css?family=Lato);
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+        .head1 {
+            font-size:40px;
+            color:#009900;
+            font-weight:bold;
+            text-align: center;
+        }
+        .head2 {
+            color: aquamarine;
+            font-size:17px;
+            margin-left:10px;
+            text-align: center;
+            margin-bottom:15px;
+        }
+        body {
+            margin: 0 auto;
+            background: #daffff;
+            background-position:center;
+            background-size: contain;
+            
+        }
+
+        .menu {
+            position: relative;
+            top:auto;
+            float: top ;
+            background-color: #009900;
+            padding:10px 0px 10px 0px;
+            color:white;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .menu a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .menu-log {
+            right: auto;
+            float: right;
+        }
+        footer {
+            width: 100%;
+            bottom: 0px;
+            background-color: #000;
+            color: #fff;
+            position: absolute;
+            padding-top:20px;
+            padding-bottom:50px;
+            text-align:center;
+            font-size:30px;
+            font-weight:bold;
+        }
+        .body_sec {
+            margin-left:20px;
+        }
+
+        
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin:  1% 0 1% 0;
+}
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-github:hover {
+    background-color: #5a32a3;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+    
+    </header>
+
+    <!-- Menu Navigation Bar -->
+    <div class="menu">
+        <a href="/home.html">HOME</a>
+        <a href="#about">ABOUT</>
+        <div class="menu-log">
+            <a href="/login.html">LOGIN</a>
+            <a href="/signup.html">SIGNUP</a>
+        </div>
+    </div>
+
+    <!-- Body section -->
+    <div class = "body_sec">
+        <section id="Content">
+            
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+       
+        <div class="footer-social-icons">
+            <h4 class="_14">Follow us on</h4>
+            <ul class="social-icons">
+                <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+        
+    </footer>
+
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
